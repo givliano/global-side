@@ -18,7 +18,7 @@ describe('TaskDetail', () => {
     );
   });
 
-  it('Should rendeer TaskDetail with right name', () => {
+  it('Should render TaskDetail with right name', () => {
     render(
       <TaskDetail
         task={mockData[0]}

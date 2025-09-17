@@ -16,7 +16,7 @@ const defaultProps = {
 };
 
 describe('TaskDetailCard Information', () => {
-  it('Should render task information correctly', () => {
+  it('should render task information correctly', () => {
     const { name, contractNumber, sex, ocrBirthdate, telephone, address } =
       mockData[0];
     render(<TaskDetailCard {...defaultProps} />);
@@ -29,7 +29,7 @@ describe('TaskDetailCard Information', () => {
     expect(screen.getByText(address)).toBeInTheDocument();
   });
 
-  it('renders all action buttons', () => {
+  it('should render all action buttons', () => {
     render(<TaskDetailCard {...defaultProps} />);
 
     expect(
@@ -50,14 +50,14 @@ describe('TaskDetailCard Button States', () => {
     expect(button).toBeDisabled();
   });
 
-  it('should disable mark done button when task is escalated', () => {
+  it('should disable mark done button when task is completed', () => {
     const escalatedTask = { ...mockData[0], status: 'completed' };
     render(<TaskDetailCard {...defaultProps} task={escalatedTask} />);
     const button = screen.getByRole('button', { name: /mark done/i });
     expect(button).toBeDisabled();
   });
 
-  it('should disable escalate button when task is escalated', () => {
+  it('should disable skip button when task is skipped', () => {
     const escalatedTask = { ...mockData[0], status: 'skipped' };
     render(<TaskDetailCard {...defaultProps} task={escalatedTask} />);
     const button = screen.getByRole('button', { name: /skip/i });
@@ -96,7 +96,7 @@ describe('TaskDetailCard User Interactions', () => {
     expect(defaultProps.setSelectedTask).toHaveBeenCalledWith(mockData[1]);
   });
 
-  it('should dispatch ESCALATE_TASK and navigate to next task', async () => {
+  it('should dispatch SKIP_TASK and navigate to next task', async () => {
     const user = userEvent.setup();
     render(<TaskDetailCard {...defaultProps} />);
 
@@ -116,7 +116,7 @@ describe('TaskDetailCard User Interactions', () => {
 
     const input = screen.getByLabelText(/birthday/i);
     const birthdayDate = '2000-01-01';
-    
+
     fireEvent.change(input, { target: { value: birthdayDate } });
 
     expect(defaultProps.dispatch).toHaveBeenCalledWith({

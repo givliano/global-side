@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/21</span>
+                <span class='fraction'>21/21</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/1</span>
+                <span class='fraction'>3/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/1</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/21</span>
+                <span class='fraction'>21/21</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -94,7 +94,7 @@
 <a name='L29'></a><a href='#L29'>29</a>
 <a name='L30'></a><a href='#L30'>30</a>
 <a name='L31'></a><a href='#L31'>31</a>
-<a name='L32'></a><a href='#L32'>32</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<a name='L32'></a><a href='#L32'>32</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -104,28 +104,28 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >import TaskListItem from './TaskListItem';<span class="fstat-no" title="function not covered" ><span class="branch-0 cbranch-no" title="branch not covered" ></span></span></span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import TaskListItem from './TaskListItem';
 &nbsp;
 import type { Task } from '../types/types';
 &nbsp;
@@ -135,27 +135,27 @@ type TaskListProps = {
   handleClick: (task: Task) =&gt; void;
 };
 &nbsp;
-<span class="cstat-no" title="statement not covered" >export default function TaskList({</span>
-<span class="cstat-no" title="statement not covered" >  tasks,</span>
-<span class="cstat-no" title="statement not covered" >  selectedTask,</span>
-<span class="cstat-no" title="statement not covered" >  handleClick,</span>
-<span class="cstat-no" title="statement not covered" >}: TaskListProps) {</span>
-<span class="cstat-no" title="statement not covered" >  return (</span>
-<span class="cstat-no" title="statement not covered" >    &lt;aside className="overflow-y-scroll shadow-lg px-2 py-6 rounded-lg h-96 lg:h-full lg:max-h-[calc(100vh-14rem)] bg-white"&gt;</span>
-<span class="cstat-no" title="statement not covered" >      &lt;div className="flex flex-col space-y-3"&gt;</span>
-<span class="cstat-no" title="statement not covered" >        &lt;h3 className="font-bold"&gt;Tasks&lt;/h3&gt;</span>
-<span class="cstat-no" title="statement not covered" >        {tasks.map((task) =&gt; (</span>
-<span class="cstat-no" title="statement not covered" >          &lt;TaskListItem</span>
-<span class="cstat-no" title="statement not covered" >            key={task.contractNumber}</span>
-<span class="cstat-no" title="statement not covered" >            task={task}</span>
-<span class="cstat-no" title="statement not covered" >            isSelected={task.contractNumber === selectedTask?.contractNumber}</span>
-<span class="cstat-no" title="statement not covered" >            handleClick={handleClick}</span>
-<span class="cstat-no" title="statement not covered" >          /&gt;</span>
-<span class="cstat-no" title="statement not covered" >        ))}</span>
-<span class="cstat-no" title="statement not covered" >      &lt;/div&gt;</span>
-<span class="cstat-no" title="statement not covered" >    &lt;/aside&gt;</span>
+export default function TaskList({
+  tasks,
+  selectedTask,
+  handleClick,
+}: TaskListProps) {
+  return (
+    &lt;aside className="overflow-y-scroll shadow-lg px-2 py-6 rounded-lg h-96 lg:h-full lg:max-h-[calc(100vh-14rem)] bg-white"&gt;
+      &lt;div className="flex flex-col space-y-3"&gt;
+        &lt;h3 className="font-bold"&gt;Tasks&lt;/h3&gt;
+        {tasks.map((task) =&gt; (
+          &lt;TaskListItem
+            key={task.contractNumber}
+            task={task}
+            isSelected={task.contractNumber === selectedTask?.contractNumber}
+            handleClick={handleClick}
+          /&gt;
+        ))}
+      &lt;/div&gt;
+    &lt;/aside&gt;
   );
-<span class="cstat-no" title="statement not covered" >}</span>
+}
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -163,7 +163,7 @@ type TaskListProps = {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-09-17T15:14:20.961Z
+                at 2025-09-18T13:27:53.631Z
             </div>
         <script src="../../prettify.js"></script>
         <script>

@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/21</span>
+                <span class='fraction'>21/21</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/1</span>
+                <span class='fraction'>3/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">50% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/1</span>
+                <span class='fraction'>1/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/21</span>
+                <span class='fraction'>21/21</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -95,7 +95,7 @@
 <a name='L30'></a><a href='#L30'>30</a>
 <a name='L31'></a><a href='#L31'>31</a>
 <a name='L32'></a><a href='#L32'>32</a>
-<a name='L33'></a><a href='#L33'>33</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<a name='L33'></a><a href='#L33'>33</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -105,29 +105,29 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-yes">32x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-yes">32x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >import { ClipboardCheck } from 'lucide-react';<span class="fstat-no" title="function not covered" ><span class="branch-0 cbranch-no" title="branch not covered" ></span></span></span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { ClipboardCheck } from 'lucide-react';
 &nbsp;
 import type { Task } from '../types/types';
 &nbsp;
@@ -137,28 +137,28 @@ type TaskItemProps = {
   handleClick: (task: Task) =&gt; void;
 };
 &nbsp;
-<span class="cstat-no" title="statement not covered" >export default function TaskListItem({</span>
-<span class="cstat-no" title="statement not covered" >  task,</span>
-<span class="cstat-no" title="statement not covered" >  isSelected,</span>
-<span class="cstat-no" title="statement not covered" >  handleClick,</span>
-<span class="cstat-no" title="statement not covered" >}: TaskItemProps) {</span>
-<span class="cstat-no" title="statement not covered" >  return (</span>
-<span class="cstat-no" title="statement not covered" >    &lt;div</span>
-<span class="cstat-no" title="statement not covered" >      className={`rounded-lg flex items-center p-2 justify-start cursor-pointer ${</span>
-<span class="cstat-no" title="statement not covered" >        isSelected ? 'bg-blue-200' : 'bg-blue-50'</span>
-<span class="cstat-no" title="statement not covered" >      }`}</span>
-<span class="cstat-no" title="statement not covered" >      onClick={() =&gt; handleClick(task)}</span>
-<span class="cstat-no" title="statement not covered" >      key={task.contractNumber}</span>
+export default function TaskListItem({
+  task,
+  isSelected,
+  handleClick,
+}: TaskItemProps) {
+  return (
+    &lt;div
+      className={`rounded-lg flex items-center p-2 justify-start cursor-pointer ${
+        isSelected ? 'bg-blue-200' : 'bg-blue-50'
+      }`}
+      onClick={<span class="fstat-no" title="function not covered" >() =&gt; handleClick(task)}</span>
+      key={task.contractNumber}
     &gt;
-<span class="cstat-no" title="statement not covered" >      &lt;ClipboardCheck size={24} /&gt;</span>
-<span class="cstat-no" title="statement not covered" >      &lt;span className="mr-auto ml-2 pr-6"&gt;{task.taskName}&lt;/span&gt;</span>
-<span class="cstat-no" title="statement not covered" >      &lt;div className="w-22 flex flex-col items-start"&gt;</span>
-<span class="cstat-no" title="statement not covered" >        &lt;p className="flex justify-start font-semibold"&gt;Status:&lt;/p&gt;</span>
-<span class="cstat-no" title="statement not covered" >        &lt;p&gt;{task.status}&lt;/p&gt;</span>
-<span class="cstat-no" title="statement not covered" >      &lt;/div&gt;</span>
-<span class="cstat-no" title="statement not covered" >    &lt;/div&gt;</span>
+      &lt;ClipboardCheck size={24} /&gt;
+      &lt;span className="mr-auto ml-2 pr-6"&gt;{task.taskName}&lt;/span&gt;
+      &lt;div className="w-22 flex flex-col items-start"&gt;
+        &lt;p className="flex justify-start font-semibold"&gt;Status:&lt;/p&gt;
+        &lt;p&gt;{task.status}&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
   );
-<span class="cstat-no" title="statement not covered" >}</span>
+}
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -166,7 +166,7 @@ type TaskItemProps = {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-09-17T15:14:20.961Z
+                at 2025-09-18T13:27:53.631Z
             </div>
         <script src="../../prettify.js"></script>
         <script>
