@@ -76,6 +76,7 @@ export default function TaskDetailCard({
               onChange={(e) =>
                 handleBirthdayChange(e.target.value, task.contractNumber)
               }
+              name="birthday"
               value={task.ocrBirthdate}
               className="w-full"
             />
